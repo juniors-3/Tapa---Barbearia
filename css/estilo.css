@@ -1,0 +1,157 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.off {
+	visibility: hidden;
+}
+
+.on {
+	visibility: visible;
+}
+
+.menu {
+    background: #231F20;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-btn {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-btn a {
+    color: white;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+    
+}
+
+
+/*menu mobile*/
+.mobile-btn {
+	display: block;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-top: 4px solid;
+    margin: 20px 20px 0 0;
+    cursor: pointer;
+    float: right;
+    -webkit-backface-visibility: hidden;
+}
+
+.mobile-btn::after, .mobile-btn::before {
+	content: '';
+    display: block;
+    height: 4px;
+    margin-top: 6px;
+    background: currentColor;
+    position: relative;
+    transition: transform .2s ease;
+    
+}
+
+.mobile-btn.active {
+	border-top-color: transparent;
+}
+
+.mobile-btn.active::after{
+    margin-top: 0px;
+    top: 2px;
+    transform: rotate(45deg);
+} 
+
+.mobile-btn.active::before{
+    margin-top: 0px;
+    top: 6px;
+    transform: rotate(135deg);
+}
+
+
+
+
+
+
+/*introducao*/
+
+.introducao {
+    height: 600px;
+    max-width: 100%;
+    background: #231F20;
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+
+}
+
+.introducao-logo {
+    max-width: 180px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.texto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+}
+
+.texto h1 {
+    font-size: 2em;
+    padding: 30px;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.texto p {
+    font-size: 3em;
+}

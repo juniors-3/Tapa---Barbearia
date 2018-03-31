@@ -29,12 +29,15 @@ img {
 
 
 
+
+
+
 .off {
-	visibility: hidden;
+    visibility: hidden;
 }
 
 .on {
-	visibility: visible;
+    visibility: visible;
 }
 
 .menu {
@@ -65,13 +68,14 @@ img {
     font-size: 1.25em;
     display: block;
     padding: 10px;
-    
+
 }
 
 
 /*menu mobile*/
+
 .mobile-btn {
-	display: block;
+    display: block;
     color: white;
     width: 36px;
     height: 36px;
@@ -82,28 +86,29 @@ img {
     -webkit-backface-visibility: hidden;
 }
 
-.mobile-btn::after, .mobile-btn::before {
-	content: '';
+.mobile-btn::after,
+.mobile-btn::before {
+    content: '';
     display: block;
     height: 4px;
     margin-top: 6px;
     background: currentColor;
     position: relative;
     transition: transform .2s ease;
-    
+
 }
 
 .mobile-btn.active {
-	border-top-color: transparent;
+    border-top-color: transparent;
 }
 
-.mobile-btn.active::after{
+.mobile-btn.active::after {
     margin-top: 0px;
     top: 2px;
     transform: rotate(45deg);
-} 
+}
 
-.mobile-btn.active::before{
+.mobile-btn.active::before {
     margin-top: 0px;
     top: 6px;
     transform: rotate(135deg);
@@ -146,12 +151,106 @@ img {
 }
 
 .texto h1 {
-    font-size: 2em;
+    font-size: 2.8em;
     padding: 30px;
     font-family: 'Playfair Display', serif;
+    letter-spacing: -5px;
 
 }
 
 .texto p {
     font-size: 3em;
+
+}
+
+.estilo {
+    letter-spacing: 20px;
+}
+
+/*servicos*/
+
+.servicos {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.servicos-info {
+    flex: 2 1 300px;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+.servicos-info h1{
+    text-align: center;
+    color: #525252;
+    font-size: 2.8em;
+    padding: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.servicos-info h1::after{
+   content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background: #525252;
+    margin: 14px auto 10px auto;
+	
+}
+.servicos-info p {
+    font-size: 1.5em;
+    font-family: helvetica;
+    color: #8F8F8F;
+    line-height: 2;
+}
+
+
+.servicos-img {
+    flex: 1 1 500px;
+    padding: 0px;
+}
+
+/*Sobre*/
+
+.sobre {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-info {
+    flex: 2 1 300px;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+.sobre-info h1{
+    text-align: center;
+    color: #525252;
+    font-size: 2.8em;
+    padding: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.sobre-info h1::after{
+   content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background: #525252;
+    margin: 14px auto 10px auto;
+	
+}
+.sobre-info p {
+    font-size: 1.5em;
+    font-family: helvetica;
+    color: #8F8F8F;
+    line-height: 2;
+}
+
+
+.sobre-img {
+    flex: 1 1 500px;
+    padding: -5px;
 }

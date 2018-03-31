@@ -38,11 +38,16 @@ img {
 
 .on {
     visibility: visible;
+
 }
 
 .menu {
     background: #231F20;
     font-family: 'Montserrat', sans-serif;
+    z-index: 10;
+    position: fixed;
+    float: right;
+    
 }
 
 .menu-btn {
